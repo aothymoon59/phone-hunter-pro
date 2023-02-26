@@ -32,7 +32,9 @@ const displayPhone = (phones, dataLimit) => {
     phoneDiv.classList.add("col");
     phoneDiv.innerHTML = `
         <div class="card">
-            <img src="${phone.image}" class="card-img-top p-4" alt="${phone.phone_name}">
+            <div class="d-flex justify-content-center">
+              <img src="${phone.image}" class="card-img-top w-75 p-4" alt="${phone.phone_name}">
+            </div>
             <div class="card-body">
                 <h5 class="card-title">${phone.phone_name}</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in
